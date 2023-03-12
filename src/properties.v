@@ -10,9 +10,7 @@ enum ParseState {
 	value
 }
 
-// PropertiesParser is a parser for properties files.
-[noinit]
-pub struct PropertiesParser {
+struct PropertiesParser {
 	// The string we are parsing.
 	raw string
 mut:
@@ -194,9 +192,7 @@ fn (mut p PropertiesParser) loop_inner() {
 	}
 }
 
-// parse parses the properties file.
-// The parsed properties are stored in the properties field.
-pub fn (mut p PropertiesParser) parse() {
+fn (mut p PropertiesParser) parse() {
 	for !p.is_at_end() {
 		p.loop_inner()
 	}
