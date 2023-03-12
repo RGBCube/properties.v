@@ -2,7 +2,7 @@
 
 <h1>properties.v</h1>
 
-[Docs](https://rgbcube.github.io/docs/properties) | [Examples](https://github.com/RGBCube/properties.v/tree/master/examples)
+[Docs](https://rgbcube.github.io/docs/properties)
 
 Parse properties files in V.
 
